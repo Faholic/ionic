@@ -36,7 +36,7 @@ export class ParkingListPage {
 
   getParkingList() {
     this.parkingProvider.getParkingList().then((data: any) => {
-      this.parkings = data.rows;
+      this.parkings = data;
     }, error => {
       console.error('Error get data!', error);
     });
